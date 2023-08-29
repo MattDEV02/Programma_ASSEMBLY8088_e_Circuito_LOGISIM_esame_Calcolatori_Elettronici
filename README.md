@@ -1,4 +1,4 @@
-# Programma_ASSEMBLY_esame_Calcolatori_Elettronici
+# Programma_ASSEMBLY8086_esame_Calcolatori_Elettronici
 
-Programma_ASSEMBLY_esame_Calcolatori_Elettronici
+Programma_ASSEMBLY8086_esame_Calcolatori_Elettronici
 
