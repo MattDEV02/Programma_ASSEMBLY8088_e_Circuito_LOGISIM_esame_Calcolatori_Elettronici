@@ -10,7 +10,7 @@ _PRINTF = 127
       PUSH stringa
       CALL LUNGHEZZASTRINGA
       MOV  SP, BP
-      PUSH (occ)
+      PUSH (occorrenze)
       PUSH stringa
       CALL CONTAOCCORRENZE
       MOV  SP, BP
@@ -52,6 +52,6 @@ CONTAOCCORRENZE:
 .SECT .DATA
    stringa: .ASCII "ociaoo.o0"
    end:     .SPACE 1
-   occ:     .ASCII "o" 
+   occorrenze:     .ASCII "o" 
    format:  .ASCII "\n Stringa di Lunghezza = %d ==> Occorrenze = %d.\n"
 .SECT .BSS
