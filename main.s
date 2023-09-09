@@ -50,8 +50,8 @@ CONTAOCCORRENZE:
    POP  BP
    RET
 .SECT .DATA
-   stringa: .ASCII "ociaoo.o0"
-   end:     .SPACE 1
+   stringa:        .ASCII "ociaoo.o0"
+   end:            .SPACE 1
    occorrenze:     .ASCII "o" 
-   format:  .ASCII "\n Stringa di Lunghezza = %d ==> Occorrenze = %d.\n"
+   format:         .ASCII "\n Stringa di Lunghezza = %d ==> Occorrenze = %d.\n"
 .SECT .BSS
