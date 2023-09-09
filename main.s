@@ -8,11 +8,11 @@ _PRINTF = 127
       MOV  SP, BP
       MOV  AX, end
       PUSH stringa
-      CALL lun
+      CALL LUNGHEZZASTRINGA
       MOV  SP, BP
       PUSH (occ)
       PUSH stringa
-      CALL contaOcc
+      CALL CONTAOCCORRENZE
       MOV  SP, BP
       PUSH DX     ! contiene il valore intero di occorrenze nella stringa.
       PUSH BX     ! contiene la lunghezza della stringa.
@@ -25,18 +25,18 @@ _PRINTF = 127
       SYS
       MOV  SP, BP
 
-lun:
+LUNGHEZZASTRINGA:
    PUSH BP
    MOV  BP, SP
    MOV  BX, 4(BP) !  stringa 
    SUB  AX, BX    !  lunghezza stringa
    MOV  CX, AX
-   MOV  BX, CX    ! NON necessario, è per formatrlo.
+   MOV  BX, CX    ! NON necessario
    MOV  SP, BP
    POP  BP
    RET
 
-contaOcc:
+CONTAOCCORRENZE:
    PUSH BP
    MOV  BP, SP
    MOV  DI, 4(BP)  ! stringa
