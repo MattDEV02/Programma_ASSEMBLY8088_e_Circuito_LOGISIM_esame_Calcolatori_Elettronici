@@ -15,7 +15,10 @@ _PRINTF = 127
       CALL CONTAOCCORRENZE
       MOV  SP, BP
       PUSH DX     ! contiene il valore intero di occorrenze nella stringa.
+      PUSH (occorrenze)
+      PUSH stringa
       PUSH BX     ! contiene la lunghezza della stringa.
+      PUSH stringa
       PUSH format
       PUSH _PRINTF
       SYS
@@ -49,9 +52,11 @@ CONTAOCCORRENZE:
    MOV SP, BP
    POP  BP
    RET
+   
 .SECT .DATA
    stringa:        .ASCII "ociaoo.o0"
    end:            .SPACE 1
    occorrenze:     .ASCII "o" 
-   format:         .ASCII "\n Stringa di Lunghezza = %d ==> Occorrenze = %d.\n"
+   format:         .ASCII "\n LENGTH(\"%s\")= %d ==> OCCURENCES(\"%s\", '%c') = %d.\n"
+
 .SECT .BSS
