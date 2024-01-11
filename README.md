@@ -1,4 +1,4 @@
-# Programma_ASSEMBLY8088_esame_Calcolatori_Elettronici
+# Programma_ASSEMBLY8088_e_Circuito_LOGISIM_esame_Calcolatori_Elettronici
 
-Programma_ASSEMBLY8086_esame_Calcolatori_Elettronici
+Programma_ASSEMBLY8088_e_Circuito_LOGISIM_esame_Calcolatori_Elettronici
 
